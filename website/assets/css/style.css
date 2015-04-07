@@ -1,0 +1,331 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/********* START SHANNON CHANGES **********/
+
+a {
+	text-decoration: none;
+	font-family: 'lato';
+}
+
+h3 {
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+nav {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 20px 20px;
+	background: #fff;
+	box-sizing: border-box;
+}
+
+nav ul li a {
+	text-transform: uppercase;
+	color: #b3b3b3;
+	padding: 0 20px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-size: 12px;
+	font-family: 'lato';
+	font-weight: 600;
+}
+
+nav ul li a:hover {
+	color: #919191;
+}
+
+.home nav ul li a[href="index.html"] {
+	color: #DF5757;
+}
+
+.goals nav ul li a[href="goals.html"] {
+	color: #DF5757;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul {
+	text-align: center;
+}
+
+.banner_image {
+	background-image: url('../images/header-pic.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -50px;
+	height: 350px;
+	width: 100%;
+	z-index: 1;
+}
+
+.goals .banner_image {
+	background-image: url('../images/goals.jpg') !important;
+}
+
+.image_wrap {
+	position: relative;
+}
+
+.gradient {
+	background: #6AB7B2;
+	background: linear-gradient(-45deg, #F8D646 , #6AB7B2);
+	background: -webkit-linear-gradient(-45deg, #6AB7B2  , #F8D646); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(-45deg, #6AB7B2 , #F8D646 ); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(-45deg, #6AB7B2 , #F8D646); /* For Firefox 3.6 to 15 */
+	height: 350px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	opacity: .75;
+	z-index: 200;
+}
+
+.intro {
+	z-index: 999;
+	position: absolute;
+	width: 800px;
+	margin-left: -400px;
+	left: 50%;
+}
+
+.intro h2 {
+	font-size: 54px;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #fff;
+	font-family: 'lato';
+	font-weight: 100;
+	margin-top: 130px;
+	text-shadow: 1px 2px 3px rgba(108,108,108,0.9)
+}
+
+body {
+	background: #eee;
+}
+
+section {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+section .content {
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px;
+	color: #333;
+	overflow: auto;
+	background: #fff;
+	box-sizing: border-box;
+}
+
+.shannon_image {
+	background-image: url('../images/shannon.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -100px;
+	height: 150px;
+	width: 150px;
+	border-radius: 75px;
+	background-position: 0 -20px;	
+	margin: 0 auto;
+	
+}
+
+.shannon_bio h1 {
+	font-size: 20px;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'lato';
+	letter-spacing: 2px;
+	color: #6AB7B2;
+	padding: 0 0 20px;
+}
+
+ p{
+	color: #8A8272;
+	padding: 20px 100px;
+	box-sizing: border-box;
+	text-align: center;
+	font-family: 'lato';
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.4em;
+}
+
+.bottom_box {
+	background: #DF5757;
+	padding: 40px 80px;
+	overflow: auto;
+	
+}
+
+.goals .bottom_box {
+	min-height: 140px;
+}
+
+.programming_career h2 {
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 800;
+	font-family: 'lato';
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	line-height: 1.4em;
+}
+
+.programming_career p {
+	color: #fff;
+	padding-bottom: 0px;
+}
+
+.button {
+	color: #fff;
+	font-family: 'lato';
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 12px;
+	letter-spacing: 2px;
+	display: inline-block;
+	margin-top: 30px;
+	text-decoration: none;
+	border: 2px solid #fff;
+	padding: 5px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	opacity: 1;
+	-moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+}
+
+.button:hover {
+	background: #CD3A3A;
+	opacity: 1;
+	
+}
+
+.gif img {
+	display: block;
+	margin: 0 auto;
+	float: left;
+
+}
+
+.gif {
+	width: 196px;
+	margin: 0 auto;
+	display: none;
+}
+
+.close {
+	font-family: 'lato';
+	color: #fff;
+	float: right;
+	margin-right: -20px;
+	margin-top: -6px;
+	font-weight: 100;
+	
+}
+
+.close:hover {
+	cursor: pointer;
+}
+
+@media (max-width: 1060px) {
+	
+	section {
+		width: 90%;
+	}
+	
+	.banner_image {
+		background-position: 0;
+	}
+	
+	.intro {
+		width: 80%;
+		margin-left: -40%;
+	}
+	
+	p {
+		padding: 0;
+	}
+	
+	.bottom_box {
+		padding: 40px;
+	}
+	
+	nav {
+		width: 90%;
+	}
+	
+	.shannon_image {
+		margin-bottom: 20px;
+	}
+	
+}
+
+
+
+
+
