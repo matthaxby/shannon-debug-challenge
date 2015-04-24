@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-	$('.button').click(function( {
+	$('.button').click(function) {
 
 		$('.programming_career').css('display', 'none');
 		$('.gif').css('display', 'block');
